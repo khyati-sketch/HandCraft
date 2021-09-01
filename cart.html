@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;1,300;1,700&display=swap"
+        rel="stylesheet" />
+
+    <!--Favicons-->
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+
+    <!--Glidejs Carousel-->
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css" />
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css" />
+
+    <!--Animate On Scroll-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="./css/product1.css" />
+
+    <!--Fontawseome Script-->
+    <script src="https://kit.fontawesome.com/a28da7d21a.js" crossorigin="anonymous"></script>
+    <title>HandCraft- Cart</title>
+</head>
+
+<body>
+    <!--Header-->
+    <header class="header" id="header">
+        <!--Navigation-->
+        <div class="navigation">
+            <div class="container">
+                <nav class="nav">
+                    <div class="nav__hamburger">
+                        <ul type="none">
+                            <li>
+                                <i class="fas fa-bars"></i>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="nav__logo">
+                        <a href="./index.html" class="scroll-link">HandCraft</a>
+                    </div>
+
+                    <div class="nav__menu">
+                        <div class="menu__top">
+                            <span class="nav__category">HandCraft</span>
+                            <ul type="none">
+                                <li>
+                                    <i class="fas fa-times"></i>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="./index.html" class="nav__link scroll-link">Home</a>
+                            </li>
+
+                            <li class="nav__item">
+                                <a href="#category" class="nav__link scroll-link">Category</a>
+                            </li>
+
+                            <li class="nav__item">
+                                <a href="#news" class="nav__link scroll-link">Blog</a>
+                            </li>
+
+                            <li class="nav__item">
+                                <a href="#contact" class="nav__link scroll-link">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="nav__icons">
+                        <a href="./account.html" target="_blank" class="icon__item">
+                            <ul>
+                                <li><i class="fas fa-user"></i></li>
+                            </ul>
+                        </a>
+
+                        <a href="#" class="icon__item">
+                            <ul>
+                                <li>
+                                    <i class="fas fa-search"></i>
+                                </li>
+                            </ul>
+                        </a>
+
+                        <a href="./cart.html" target="_blank" class="icon__item">
+                            <ul>
+                                <li><i class="fas fa-shopping-basket"></i></li>
+                            </ul>
+                            <span id="cart__total">0</span>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <div class="page__title-area">
+            <div class="container">
+                <div class="page__title-container">
+                    <ul class="page__titles">
+                        <li>
+                            <a href="./index.html"><i class="fas fa-home"></i></a>
+                        </li>
+                        <li class="page__title">Cart</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="section cart__area">
+            <div class="container">
+                <div class="responsive__cart-area">
+                    <form class="cart__form">
+                        <div class="cart__table table-responsive">
+                            <table class="table" width="100%">
+                                <thead>
+                                    <tr>
+                                        <th>PRODUCT</th>
+                                        <th>NAME</th>
+                                        <th>UNIT PRICE</th>
+                                        <th>QUANTITY</th>
+                                        <th>TOTAL</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="product__thumbnail">
+                                            <a href="#">
+                                                <img src="./images/products/photoframe/wallgrid.jpg" alt="">
+                                            </a>
+                                        </td>
+                                        <td class="product__name">
+                                            <a href="#">Photo Holder Wall Grid</a>
+                                            <br><br>
+                                            <small>Gold</small>
+                                        </td>
+                                        <td class="product__price">
+                                            <div class="price">
+                                                <span class="new__price">Rs. 1,699.00</span>
+                                            </div>
+                                        </td>
+                                        <td class="product__quantity">
+                                            <div class="input-counter">
+                                                <div>
+                                                    <span class="minus-btn">
+                                                        <i class="fas fa-minus"></i>
+                                                    </span>
+                                                    <input type="text" min="1" value="1" max="10" class="counter-btn">
+                                                    <span class="plus-btn">
+                                                        <i class="fas fa-plus"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="product__subtotal">
+                                            <div class="price">
+                                                <span class="new__price">Rs. 1,699.00</span>
+                                            </div>
+                                            <a href="#" class="remove__cart-item">
+                                                <i class="fas fa-trash"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="product__thumbnail">
+                                            <a href="#">
+                                                <img src="./images/products/photoframe/spotify.jpg" alt="">
+                                            </a>
+                                        </td>
+                                        <td class="product__name">
+                                            <a href="#">Personalized Spotify Plaque</a>
+                                            <br><br>
+                                            <small>White</small>
+                                        </td>
+                                        <td class="product__price">
+                                            <div class="price">
+                                                <span class="new__price">Rs. 990.00</span>
+                                            </div>
+                                        </td>
+                                        <td class="product__quantity">
+                                            <div class="input-counter">
+                                                <div>
+                                                    <span class="minus-btn">
+                                                        <i class="fas fa-minus"></i>
+                                                    </span>
+                                                    <input type="text" min="1" value="1" max="10" class="counter-btn">
+                                                    <span class="plus-btn">
+                                                        <i class="fas fa-plus"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="product__subtotal">
+                                            <div class="price">
+                                                <span class="new__price">Rs. 990.00</span>
+                                            </div>
+                                            <a href="#" class="remove__cart-item">
+                                                <i class="fas fa-trash"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="product__thumbnail">
+                                            <a href="#">
+                                                <img src="./images/products/popup/ledbox.jpg" alt="">
+                                            </a>
+                                        </td>
+                                        <td class="product__name">
+                                            <a href="#">Explosion Box with LED Light</a>
+                                            <br><br>
+                                            <small>Gold</small>
+                                        </td>
+                                        <td class="product__price">
+                                            <div class="price">
+                                                <span class="new__price">Rs. 349.00</span>
+                                            </div>
+                                        </td>
+                                        <td class="product__quantity">
+                                            <div class="input-counter">
+                                                <div>
+                                                    <span class="minus-btn">
+                                                        <i class="fas fa-minus"></i>
+                                                    </span>
+                                                    <input type="text" min="1" value="1" max="10" class="counter-btn">
+                                                    <span class="plus-btn">
+                                                        <i class="fas fa-plus"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="product__subtotal">
+                                            <div class="price">
+                                                <span class="new__price">Rs. 349.00</span>
+                                            </div>
+                                            <a href="#" class="remove__cart-item">
+                                                <i class="fas fa-trash"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="product__thumbnail">
+                                            <a href="#">
+                                                <img src="./images/products/bottle/toned.jpg" alt="">
+                                            </a>
+                                        </td>
+                                        <td class="product__name">
+                                            <a href="#">Gold-Toned Table Top Bottle</a>
+                                            <br><br>
+                                            <small>White</small>
+                                        </td>
+                                        <td class="product__price">
+                                            <div class="price">
+                                                <span class="new__price">Rs. 900.00</span>
+                                            </div>
+                                        </td>
+                                        <td class="product__quantity">
+                                            <div class="input-counter">
+                                                <div>
+                                                    <span class="minus-btn">
+                                                        <i class="fas fa-minus"></i>
+                                                    </span>
+                                                    <input type="text" min="1" value="1" max="10" class="counter-btn">
+                                                    <span class="plus-btn">
+                                                        <i class="fas fa-plus"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="product__subtotal">
+                                            <div class="price">
+                                                <span class="new__price">Rs. 900.00</span>
+                                            </div>
+                                            <a href="#" class="remove__cart-item">
+                                                <i class="fas fa-trash"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="product__thumbnail">
+                                            <a href="#">
+                                                <img src="./images/products/photoframe/artwall.jpg" alt="">
+                                            </a>
+                                        </td>
+                                        <td class="product__name">
+                                            <a href="#">Wall Photo Frame</a>
+                                            <br><br>
+                                            <small>Light Brown</small>
+                                        </td>
+                                        <td class="product__price">
+                                            <div class="price">
+                                                <span class="new__price">Rs. 199.00</span>
+                                            </div>
+                                        </td>
+                                        <td class="product__quantity">
+                                            <div class="input-counter">
+                                                <div>
+                                                    <span class="minus-btn">
+                                                        <i class="fas fa-minus"></i>
+                                                    </span>
+                                                    <input type="text" min="1" value="1" max="10" class="counter-btn">
+                                                    <span class="plus-btn">
+                                                        <i class="fas fa-plus"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="product__subtotal">
+                                            <div class="price">
+                                                <span class="new__price">Rs. 199.00</span>
+                                            </div>
+                                            <a href="#" class="remove__cart-item">
+                                                <i class="fas fa-trash"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="product__thumbnail">
+                                            <a href="#">
+                                                <img src="./images/products/letters/blue.jpg" alt="">
+                                            </a>
+                                        </td>
+                                        <td class="product__name">
+                                            <a href="#">Solid Blue Handmade Journal</a>
+                                            <br><br>
+                                            <small>Blue</small>
+                                        </td>
+                                        <td class="product__price">
+                                            <div class="price">
+                                                <span class="new__price">Rs. 400.00</span>
+                                            </div>
+                                        </td>
+                                        <td class="product__quantity">
+                                            <div class="input-counter">
+                                                <div>
+                                                    <span class="minus-btn">
+                                                        <i class="fas fa-minus"></i>
+                                                    </span>
+                                                    <input type="text" min="1" value="1" max="10" class="counter-btn">
+                                                    <span class="plus-btn">
+                                                        <i class="fas fa-plus"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="product__subtotal">
+                                            <div class="price">
+                                                <span class="new__price">Rs. 400.00</span>
+                                            </div>
+                                            <a href="#" class="remove__cart-item">
+                                                <i class="fas fa-trash"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="cart-btns">
+                            <div class="continue__shopping">
+                                <a href="./index.html">Continue Shopping</a>
+                            </div>
+                            <div class="check__shipping">
+                                <input type="checkbox">
+                                <span>Shipping(Free)</span>
+                            </div>
+                        </div>
+
+                        <div class="cart__totals">
+                            <h3>Cart Totals</h3>
+                            <ul>
+                                <li>
+                                    Subtotal
+                                    <span class="new__price">Rs. 4,537.00</span>
+                                </li>
+                                <li>
+                                    Shipping
+                                    <span>Rs. 0.00</span>
+                                </li>
+                                <li>
+                                    Total
+                                    <span class="new__price">Rs. 4,537.00</span>
+                                </li>
+                            </ul>
+                            <a href="">PROCEED TO CHECKOUT</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!--Facility Section-->
+        <section class="facility__section section" id="facility">
+            <div class="container">
+                <div class="facility__container">
+                    <div class="facility__box">
+                        <div class="facility-img__container">
+                            <i class="fas fa-plane"></i>
+                        </div>
+                        <p>FREE SHIPPING WORLDWIDE</p>
+                    </div>
+
+                    <div class="facility__box">
+                        <div class="facility-img__container">
+                            <i class="fas fa-credit-card"></i>
+                        </div>
+                        <p>CASHBACK GURANTEED</p>
+                    </div>
+
+                    <div class="facility__box">
+                        <div class="facility-img__container">
+                            <i class="far fa-credit-card"></i>
+                        </div>
+                        <p>SEVERAL PAYMENT GATEWAYS</p>
+                    </div>
+
+                    <div class="facility__box">
+                        <div class="facility-img__container">
+                            <i class="fas fa-headphones"></i>
+                        </div>
+                        <p>24/7 ONLINE SUPPORT</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--Footer-->
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-top__box">
+                    <h3>EXTRAS</h3>
+                    <a href="#">Brands</a>
+                    <a href="#">Gift Certificates</a>
+                    <a href="#">Affiliate</a>
+                    <a href="#">Specials</a>
+                    <a href="#">Site Map</a>
+                </div>
+
+                <div class="footer-top__box">
+                    <h3>INFORMATION</h3>
+                    <a href="#">About Us</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Site Map</a>
+                </div>
+
+                <div class="footer-top__box">
+                    <h3>MY ACCOUNT</h3>
+                    <a href="#">My Account</a>
+                    <a href="#">Order History</a>
+                    <a href="#">Wish List</a>
+                    <a href="#">Newsletter</a>
+                    <a href="#">Returns</a>
+                </div>
+                <div class="footer-top__box">
+                    <h3>CONTACT US</h3>
+                    <div class="">
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i>
+                            A-167, Dream House, RIICO Industrial Area, Abu Road
+                        </span>
+                    </div>
+
+                    <div class="">
+                        <span>
+                            <i class="fas fa-envelope"></i>
+                            zenya6928@gmail.com
+                        </span>
+                    </div>
+
+                    <div class="">
+                        <span>
+                            <i class="fas fa-phone-alt"></i>
+                            7357-789-084
+                        </span>
+                    </div>
+
+                    <div class="">
+                        <span>
+                            <i class="fas fa-paper-plane"></i>
+                            Abu Road, Rajasthan
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--Go To Top-->
+    <a href="#" class="goto-top scroll-link">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+
+    <!--Glidejs-->
+    <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+
+    <!--AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="./js/slider.js"></script>
+</body>
+
+</html>
