@@ -1,0 +1,1740 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;1,300;1,700&display=swap"
+        rel="stylesheet" />
+
+    <!--Favicons-->
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+
+    <!--Glidejs Carousel-->
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css" />
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css" />
+
+    <!--Animate On Scroll-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!--Fontawseome Script-->
+    <script src="https://kit.fontawesome.com/a28da7d21a.js" crossorigin="anonymous"></script>
+
+    <title>HandCraft- Buy HandCrafted Gifts Online</title>
+</head>
+
+<body>
+    <!--Header-->
+    <header class="header" id="header">
+        <!--Navigation-->
+        <div class="navigation">
+            <div class="container">
+                <nav class="nav">
+                    <div class="nav__hamburger">
+                        <ul type="none">
+                            <li>
+                                <i class="fas fa-bars"></i>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="nav__logo">
+                        <a href="./index.html" class="scroll-link">HandCraft</a>
+                    </div>
+
+                    <div class="nav__menu">
+                        <div class="menu__top">
+                            <span class="nav__category">HandCraft</span>
+                            <ul type="none">
+                                <li>
+                                    <i class="fas fa-times"></i>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="./index.html" class="nav__link scroll-link">Home</a>
+                            </li>
+
+                            <li class="nav__item">
+                                <a href="#category" class="nav__link scroll-link">Category</a>
+                            </li>
+
+                            <li class="nav__item">
+                                <a href="#news" class="nav__link scroll-link">Blog</a>
+                            </li>
+
+                            <li class="nav__item">
+                                <a href="#contact" class="nav__link scroll-link">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="nav__icons">
+                        <a href="./account.html" target="_blank" class="icon__item">
+                            <ul>
+                                <li><i class="fas fa-user"></i></li>
+                            </ul>
+                        </a>
+
+                        <a href="#" class="icon__item">
+                            <ul>
+                                <li>
+                                    <i class="fas fa-search"></i>
+                                </li>
+                            </ul>
+                        </a>
+
+                        <a href="./cart.html" target="_blank" class="icon__item">
+                            <ul>
+                                <li><i class="fas fa-shopping-basket"></i></li>
+                            </ul>
+                            <span id="cart__total">0</span>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <!--Hero Area-->
+        <div class="hero">
+            <div class="glide" id="glide_1">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide">
+                            <div class="hero__center">
+                                <div class="hero__left">
+                                    <span>Find the Perfect Gift</span>
+                                    <h1>Exciting Gifts Just For You</h1>
+                                    <p>Trending nowadays to gift your loved ones</p>
+                                    <a href="./product2.html" target="_blank"><button class="hero__btn">SHOP
+                                            NOW</button></a>
+                                </div>
+                                <div class="hero__right">
+                                    <div class="hero__img-container">
+                                        <img src="./images/banner_01.png" alt="" class="banner_01">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="glide__slide">
+                            <div class="hero__center">
+                                <div class="hero__left">
+                                    <span>Find the Perfect Gift</span>
+                                    <h1>Exciting Gifts Just For You</h1>
+                                    <p>Trending nowadays to gift your loved ones</p>
+                                    <a href="./product1.html" target="_blank"><button class="hero__btn">SHOP
+                                            NOW</button></a>
+                                </div>
+                                <div class="hero__right">
+                                    <div class="hero__img-container">
+                                        <img src="./images/banner_02.png" alt="" class="banner_02">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="glide__bullets" data-glide-el="controls[nav]">
+                    <button class="glide__bullet" data-glide-dir="=0"></button>
+                    <button class="glide__bullet" data-glide-dir="=1"></button>
+                </div>
+
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                        <ul>
+                            <li><i class="fas fa-arrow-left"></i></li>
+                        </ul>
+                    </button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+                        <ul>
+                            <li>
+                                <i class="fas fa-arrow-right"></i>
+                            </li>
+                        </ul>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--Main-->
+    <main id="main">
+        <!--Collection-->
+        <section class="section collection" id="collection">
+            <div class="container">
+                <div class="collection__container">
+                    <div class="collection__box">
+                        <div class="img__container">
+                            <img src="./images/collection_02.png" class="collection_02" />
+                        </div>
+                        <div class="collection__content">
+                            <div class="collection__data">
+                                <span>New Designs Introduced</span>
+                                <h1>Wall & Tabletop Frames</h1>
+                                <a href="./product3.html" target="_blank">SHOP NOW</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="collection__box">
+                        <div class="img__container">
+                            <img src="./images/collection_01.png" class="collection_01" />
+                        </div>
+                        <div class="collection__content">
+                            <div class="collection__data">
+                                <span>For Letter Lovers</span>
+                                <h1>DIY Letter Kit</h1>
+                                <a href="./product4.html" target="_blank">SHOP NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Latest Products-->
+        <div class="container">
+            <section class="section latest__products" id="latest">
+                <div class="title__container">
+                    <div class="section__title active" data-id="Latest Products">
+                        <span class="dot"></span>
+                        <h1 class="primary__title">Latest Products</h1>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="glide" id="glide_2">
+                        <div class="glide__track" data-glide-el="track">
+                            <ul class="glide__slides latest-center">
+                                <li class="glide__slide">
+                                    <div class="product">
+                                        <div class="product__header">
+                                            <img src="./images/products/photoframe/glassframe.jpg" alt="" />
+                                        </div>
+                                        <div class="product__footer">
+                                            <h3>Golden Glass Photo Frame</h3>
+                                            <div class="rating">
+                                                <a href="#">
+
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                </a>
+                                            </div>
+                                            <div class="product__price">
+                                                <h4>Rs. 1,299.00</h4>
+                                                <a href="#"><button type="button" class="product__btn">
+                                                        Add to Cart
+                                                    </button></a>
+                                            </div>
+                                            <ul>
+
+                                                <a href="#">
+                                                    <i class="fas fa-eye"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="far fa-heart"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fas fa-sync-alt"></i>
+                                                </a>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="glide__slide">
+                                    <div class="product">
+                                        <div class="product__header">
+                                            <img src="./images/products/popup/popup.jpg" alt="" />
+                                        </div>
+                                        <div class="product__footer">
+                                            <h3>Photo Pop-up Box</h3>
+                                            <div class="rating">
+                                                <a href="#">
+
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                </a>
+                                            </div>
+                                            <div class="product__price">
+                                                <h4>Rs. 525.00</h4>
+                                                <a href="#"><button type="button" class="product__btn">
+                                                        Add to Cart
+                                                    </button></a>
+                                            </div>
+                                            <ul>
+
+                                                <a href="#">
+                                                    <i class="fas fa-eye"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="far fa-heart"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fas fa-sync-alt"></i>
+                                                </a>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="glide__slide">
+                                    <div class="product">
+                                        <div class="product__header">
+                                            <img src="./images/products/wallmount/punchfree.jpg" alt="" />
+                                        </div>
+                                        <div class="product__footer">
+                                            <h3>Loozito Wall Mount</h3>
+                                            <div class="rating">
+                                                <a href="#">
+
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                </a>
+                                            </div>
+                                            <div class="product__price">
+                                                <h4>Rs. 499.00</h4>
+                                                <a href="#"><button type="button" class="product__btn">
+                                                        Add to Cart
+                                                    </button></a>
+                                            </div>
+                                            <ul>
+
+                                                <a href="#">
+                                                    <i class="fas fa-eye"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="far fa-heart"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fas fa-sync-alt"></i>
+                                                </a>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="glide__slide">
+                                    <div class="product">
+                                        <div class="product__header">
+                                            <img src="./images/products/scroll/jar.jpg" alt="" />
+                                        </div>
+                                        <div class="product__footer">
+                                            <h3>Fluffick Message Scroll Jar</h3>
+                                            <div class="rating">
+                                                <a href="#">
+
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                </a>
+                                            </div>
+                                            <div class="product__price">
+                                                <h4>Rs. 199.00</h4>
+                                                <a href="#"><button type="button" class="product__btn">
+                                                        Add to Cart
+                                                    </button></a>
+                                            </div>
+                                            <ul>
+
+                                                <a href="#">
+                                                    <i class="fas fa-eye"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="far fa-heart"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fas fa-sync-alt"></i>
+                                                </a>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="glide__slide">
+                                    <div class="product">
+                                        <div class="product__header">
+                                            <img src="./images/products/photoframe/blockframe.jpg" alt="" />
+                                        </div>
+                                        <div class="product__footer">
+                                            <h3>Photo Block Frame</h3>
+                                            <div class="rating">
+                                                <a href="#">
+
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                </a>
+                                            </div>
+                                            <div class="product__price">
+                                                <h4>Rs. 845.00</h4>
+                                                <a href="#"><button type="button" class="product__btn">
+                                                        Add to Cart
+                                                    </button></a>
+                                            </div>
+                                            <ul>
+
+                                                <a href="#">
+                                                    <i class="fas fa-eye"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="far fa-heart"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fas fa-sync-alt"></i>
+                                                </a>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="glide__slide">
+                                    <div class="product">
+                                        <div class="product__header">
+                                            <img src="./images/products/popup/friends.jpg" alt="" />
+                                        </div>
+                                        <div class="product__footer">
+                                            <h3>Friends Gift Box</h3>
+                                            <div class="rating">
+                                                <a href="#">
+
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                </a>
+                                            </div>
+                                            <div class="product__price">
+                                                <h4>Rs. 1,799.00</h4>
+                                                <a href="#"><button type="button" class="product__btn">
+                                                        Add to Cart
+                                                    </button></a>
+                                            </div>
+                                            <ul>
+
+                                                <a href="#">
+                                                    <i class="fas fa-eye"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="far fa-heart"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fas fa-sync-alt"></i>
+                                                </a>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="glide__slide">
+                                    <div class="product">
+                                        <div class="product__header">
+                                            <img src="./images/products/photoframe/wallgrid.jpg" alt="" />
+                                        </div>
+                                        <div class="product__footer">
+                                            <h3>Photo Holder Wall Grid</h3>
+                                            <div class="rating">
+                                                <a href="#">
+
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                </a>
+                                            </div>
+                                            <div class="product__price">
+                                                <h4>Rs. 1,699.00</h4>
+                                                <a href="#"><button type="button" class="product__btn">
+                                                        Add to Cart
+                                                    </button></a>
+                                            </div>
+                                            <ul>
+
+                                                <a href="#">
+                                                    <i class="fas fa-eye"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="far fa-heart"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fas fa-sync-alt"></i>
+                                                </a>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="glide__slide">
+                                    <div class="product">
+                                        <div class="product__header">
+                                            <img src="./images/products/bottle/ledbottle.jpg" alt="" />
+                                        </div>
+                                        <div class="product__footer">
+                                            <h3>Yellow LED Bottle</h3>
+                                            <div class="rating">
+                                                <a href="#">
+
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                </a>
+                                            </div>
+                                            <div class="product__price">
+                                                <h4>Rs. 825.00</h4>
+                                                <a href="#"><button type="button" class="product__btn">
+                                                        Add to Cart
+                                                    </button></a>
+                                            </div>
+                                            <ul>
+
+                                                <a href="#">
+                                                    <i class="fas fa-eye"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="far fa-heart"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fas fa-sync-alt"></i>
+                                                </a>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="glide__slide">
+                                    <div class="product">
+                                        <div class="product__header">
+                                            <img src="./images/products/popup/explosionbox.jpg" alt="" />
+                                        </div>
+                                        <div class="product__footer">
+                                            <h3>Photo Explosion Box</h3>
+                                            <div class="rating">
+                                                <a href="#">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                </a>
+                                            </div>
+                                            <div class="product__price">
+                                                <h4>Rs. 1,725.00</h4>
+                                                <a href="#"><button type="button" class="product__btn">
+                                                        Add to Cart
+                                                    </button></a>
+                                            </div>
+                                            <ul>
+
+                                                <a href="#">
+                                                    <i class="fas fa-eye"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="far fa-heart"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fas fa-sync-alt"></i>
+                                                </a>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="glide__arrows" data-glide-el="controls">
+                            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                                <ul>
+                                    <li><i class="fas fa-arrow-left"></i></li>
+                                </ul>
+                            </button>
+                            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+                                <ul>
+                                    <li>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </li>
+                                </ul>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--Category Center-->
+            <section class="category__section section" id="category">
+                <div class="tab__list">
+                    <div class="title__container tabs">
+                        <div class="section__titles category__titles">
+                            <div class="section__title filter-btn active" data-id="All Products">
+                                <span class="dot"></span>
+                                <h1 class="primary__title">All Products</h1>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="category__container">
+                        <div class="category__center">
+                            <div class="product">
+                                <div class="product__header">
+                                    <img src="./images/products/shadowbox/wooden.jpg" alt="" />
+                                </div>
+                                <div class="product__footer">
+                                    <h3>Wooden Shadow Box</h3>
+                                    <div class="rating">
+                                        <a href="#">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </a>
+                                    </div>
+                                    <div class="product__price">
+                                        <h4>Rs. 499.00</h4>
+                                        <a href="#"><button type="button" class="product__btn">
+                                                Add to Cart
+                                            </button></a>
+                                    </div>
+                                    <ul>
+
+                                        <a href="#">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="far fa-heart"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fas fa-sync-alt"></i>
+                                        </a>
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="product">
+                                <div class="product__header">
+                                    <img src="./images/products/popup/surprisebox.jpeg" alt="" />
+                                </div>
+                                <div class="product__footer">
+                                    <h3>Five-Layered Surprise Box</h3>
+                                    <div class="rating">
+                                        <a href="#">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </a>
+                                    </div>
+                                    <div class="product__price">
+                                        <h4>Rs. 1,150.00</h4>
+                                        <a href="#"><button type="button" class="product__btn">
+                                                Add to Cart
+                                            </button></a>
+                                    </div>
+                                    <ul>
+
+                                        <a href="#">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="far fa-heart"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fas fa-sync-alt"></i>
+                                        </a>
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="product">
+                                <div class="product__header">
+                                    <img src="./images/products/photoframe/spotify.jpg" alt="" />
+                                </div>
+                                <div class="product__footer">
+                                    <h3>Personalized Spotify Plaque</h3>
+                                    <div class="rating">
+                                        <a href="#">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </a>
+                                    </div>
+                                    <div class="product__price">
+                                        <h4>Rs. 990.00</h4>
+                                        <a href="#"><button type="button" class="product__btn">
+                                                Add to Cart
+                                            </button></a>
+                                    </div>
+                                    <ul>
+
+                                        <a href="#">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="far fa-heart"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fas fa-sync-alt"></i>
+                                        </a>
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="product">
+                                <div class="product__header">
+                                    <img src="./images/products/bottle/tray.jpg" alt="" />
+                                </div>
+                                <div class="product__footer">
+                                    <h3>Triangular Vanity Tray</h3>
+                                    <div class="rating">
+                                        <a href="#">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </a>
+                                    </div>
+                                    <div class="product__price">
+                                        <h4>Rs. 1,399.00</h4>
+                                        <a href="#"><button type="button" class="product__btn">
+                                                Add to Cart
+                                            </button></a>
+                                    </div>
+                                    <ul>
+
+                                        <a href="#">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="far fa-heart"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fas fa-sync-alt"></i>
+                                        </a>
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="product">
+                                <div class="product__header">
+                                    <img src="./images/products/letters/letterkit.jpg" alt="" />
+                                </div>
+                                <div class="product__footer">
+                                    <h3>Letter Writing, Gift Tags</h3>
+                                    <div class="rating">
+                                        <a href="#">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </a>
+                                    </div>
+                                    <div class="product__price">
+                                        <h4>Rs. 950.00</h4>
+                                        <a href="#"><button type="button" class="product__btn">
+                                                Add to Cart
+                                            </button></a>
+                                    </div>
+                                    <ul>
+
+                                        <a href="#">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="far fa-heart"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fas fa-sync-alt"></i>
+                                        </a>
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="product">
+                                <div class="product__header">
+                                    <img src="./images/products/photoframe/grid.jpg" alt="" />
+                                </div>
+                                <div class="product__footer">
+                                    <h3>Heart Grid Frame</h3>
+                                    <div class="rating">
+                                        <a href="#">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </a>
+                                    </div>
+                                    <div class="product__price">
+                                        <h4>Rs. 699.00</h4>
+                                        <a href="#"><button type="button" class="product__btn">
+                                                Add to Cart
+                                            </button></a>
+                                    </div>
+                                    <ul>
+
+                                        <a href="#">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="far fa-heart"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fas fa-sync-alt"></i>
+                                        </a>
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="product">
+                                <div class="product__header">
+                                    <img src="./images/products/bottle/spark.jpg" alt="" />
+                                </div>
+                                <div class="product__footer">
+                                    <h3>Wishlight Bottle</h3>
+                                    <div class="rating">
+                                        <a href="#">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </a>
+                                    </div>
+                                    <div class="product__price">
+                                        <h4>Rs. 499.00</h4>
+                                        <a href="#"><button type="button" class="product__btn">
+                                                Add to Cart
+                                            </button></a>
+                                    </div>
+                                    <ul>
+
+                                        <a href="#">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="far fa-heart"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fas fa-sync-alt"></i>
+                                        </a>
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="product">
+                                <div class="product__header">
+                                    <img src="./images/products/popup/birthday.jpg" alt="" />
+                                </div>
+                                <div class="product__footer">
+                                    <h3>Birthday Explosion Box</h3>
+                                    <div class="rating">
+                                        <a href="#">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </a>
+                                    </div>
+                                    <div class="product__price">
+                                        <h4>Rs. 399.00</h4>
+                                        <a href="#"><button type="button" class="product__btn">
+                                                Add to Cart
+                                            </button></a>
+                                    </div>
+                                    <ul>
+
+                                        <a href="#">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="far fa-heart"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fas fa-sync-alt"></i>
+                                        </a>
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="product">
+                                <div class="product__header">
+                                    <img src="./images/products/letters/journal.jpg" alt="" />
+                                </div>
+                                <div class="product__footer">
+                                    <h3>Personalized Leather Journal</h3>
+                                    <div class="rating">
+                                        <a href="#">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </a>
+                                    </div>
+                                    <div class="product__price">
+                                        <h4>Rs. 495.00</h4>
+                                        <a href="#"><button type="button" class="product__btn">
+                                                Add to Cart
+                                            </button></a>
+                                    </div>
+                                    <ul>
+
+                                        <a href="#">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="far fa-heart"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fas fa-sync-alt"></i>
+                                        </a>
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="product">
+                                <div class="product__header">
+                                    <img src="./images/products/scroll/hamper.jpg" alt="" />
+                                </div>
+                                <div class="product__footer">
+                                    <h3>24-hour Surprise Hamper</h3>
+                                    <div class="rating">
+                                        <a href="#">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </a>
+                                    </div>
+                                    <div class="product__price">
+                                        <h4>Rs. 4,890.00</h4>
+                                        <a href="#"><button type="button" class="product__btn">
+                                                Add to Cart
+                                            </button></a>
+                                    </div>
+                                    <ul>
+
+                                        <a href="#">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="far fa-heart"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fas fa-sync-alt"></i>
+                                        </a>
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="product">
+                                <div class="product__header">
+                                    <img src="./images/products/bottle/lamp.jpg" alt="" />
+                                </div>
+                                <div class="product__footer">
+                                    <h3>Personalized Photo Lamp</h3>
+                                    <div class="rating">
+                                        <a href="#">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </a>
+                                    </div>
+                                    <div class="product__price">
+                                        <h4>Rs. 550.00</h4>
+                                        <a href="#"><button type="button" class="product__btn">
+                                                Add to Cart
+                                            </button></a>
+                                    </div>
+                                    <ul>
+
+                                        <a href="#">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="far fa-heart"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fas fa-sync-alt"></i>
+                                        </a>
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="product">
+                                <div class="product__header">
+                                    <img src="./images/products/photoframe/octa.jpg" alt="" />
+                                </div>
+                                <div class="product__footer">
+                                    <h3>Octagonal Photo Holder</h3>
+                                    <div class="rating">
+                                        <a href="#">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </a>
+                                    </div>
+                                    <div class="product__price">
+                                        <h4>Rs. 2,000.00</h4>
+                                        <a href="#"><button type="button" class="product__btn">
+                                                Add to Cart
+                                            </button></a>
+                                    </div>
+                                    <ul>
+
+                                        <a href="#">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="far fa-heart"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fas fa-sync-alt"></i>
+                                        </a>
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="product">
+                                <div class="product__header">
+                                    <img src="./images/products/bottle/firefly.jpg" alt="" />
+                                </div>
+                                <div class="product__footer">
+                                    <h3>Firefly Light Jar</h3>
+                                    <div class="rating">
+                                        <a href="#">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </a>
+                                    </div>
+                                    <div class="product__price">
+                                        <h4>Rs. 750.00</h4>
+                                        <a href="#"><button type="button" class="product__btn">
+                                                Add to Cart
+                                            </button></a>
+                                    </div>
+                                    <ul>
+
+                                        <a href="#">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="far fa-heart"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fas fa-sync-alt"></i>
+                                        </a>
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="product">
+                                <div class="product__header">
+                                    <img src="./images/products/popup/love.jpg" alt="" />
+                                </div>
+                                <div class="product__footer">
+                                    <h3>3-layered Heartagon Box</h3>
+                                    <div class="rating">
+                                        <a href="#">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </a>
+                                    </div>
+                                    <div class="product__price">
+                                        <h4>Rs. 1,399.00</h4>
+                                        <a href="#"><button type="button" class="product__btn">
+                                                Add to Cart
+                                            </button></a>
+                                    </div>
+                                    <ul>
+
+                                        <a href="#">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="far fa-heart"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fas fa-sync-alt"></i>
+                                        </a>
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="product">
+                                <div class="product__header">
+                                    <img src="./images/products/wallmount/ornaments.jpg" alt="" />
+                                </div>
+                                <div class="product__footer">
+                                    <h3>Christmas Tree Ornaments</h3>
+                                    <div class="rating">
+                                        <a href="#">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </a>
+                                    </div>
+                                    <div class="product__price">
+                                        <h4>Rs. 720.00</h4>
+                                        <a href="#"><button type="button" class="product__btn">
+                                                Add to Cart
+                                            </button></a>
+                                    </div>
+                                    <ul>
+
+                                        <a href="#">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="far fa-heart"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fas fa-sync-alt"></i>
+                                        </a>
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="product">
+                                <div class="product__header">
+                                    <img src="./images/products/letters/eco.jpg" alt="" />
+                                </div>
+                                <div class="product__footer">
+                                    <h3>Eco Journal</h3>
+                                    <div class="rating">
+                                        <a href="#">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </a>
+                                    </div>
+                                    <div class="product__price">
+                                        <h4>Rs. 190.00</h4>
+                                        <a href="#"><button type="button" class="product__btn">
+                                                Add to Cart
+                                            </button></a>
+                                    </div>
+                                    <ul>
+
+                                        <a href="#">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="far fa-heart"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fas fa-sync-alt"></i>
+                                        </a>
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="product">
+                                <div class="product__header">
+                                    <img src="./images/products/shadowbox/holder.jpg" alt="" />
+                                </div>
+                                <div class="product__footer">
+                                    <h3>Glass Magazine Holder</h3>
+                                    <div class="rating">
+                                        <a href="#">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </a>
+                                    </div>
+                                    <div class="product__price">
+                                        <h4>Rs. 1,749.00</h4>
+                                        <a href="#"><button type="button" class="product__btn">
+                                                Add to Cart
+                                            </button></a>
+                                    </div>
+                                    <ul>
+
+                                        <a href="#">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="far fa-heart"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fas fa-sync-alt"></i>
+                                        </a>
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="product">
+                                <div class="product__header">
+                                    <img src="./images/products/photoframe/woodprint.jpg" alt="" />
+                                </div>
+                                <div class="product__footer">
+                                    <h3>Your Photo Wood Print</h3>
+                                    <div class="rating">
+                                        <a href="#">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </a>
+                                    </div>
+                                    <div class="product__price">
+                                        <h4>Rs. 640.00</h4>
+                                        <a href="#"><button type="button" class="product__btn">
+                                                Add to Cart
+                                            </button></a>
+                                    </div>
+                                    <ul>
+
+                                        <a href="#">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="far fa-heart"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fas fa-sync-alt"></i>
+                                        </a>
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="product">
+                                <div class="product__header">
+                                    <img src="./images/products/photoframe/photoclock.jpg" alt="" />
+                                </div>
+                                <div class="product__footer">
+                                    <h3>Personalized Photo Clock</h3>
+                                    <div class="rating">
+                                        <a href="#">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </a>
+                                    </div>
+                                    <div class="product__price">
+                                        <h4>Rs. 399.00</h4>
+                                        <a href="#"><button type="button" class="product__btn">
+                                                Add to Cart
+                                            </button></a>
+                                    </div>
+                                    <ul>
+
+                                        <a href="#">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="far fa-heart"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fas fa-sync-alt"></i>
+                                        </a>
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="product">
+                                <div class="product__header">
+                                    <img src="./images/products/wallmount/stand.jpg" alt="" />
+                                </div>
+                                <div class="product__footer">
+                                    <h3>Personalized Photo Stand</h3>
+                                    <div class="rating">
+                                        <a href="#">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </a>
+                                    </div>
+                                    <div class="product__price">
+                                        <h4>Rs. 745.00</h4>
+                                        <a href="#"><button type="button" class="product__btn">
+                                                Add to Cart
+                                            </button></a>
+                                    </div>
+                                    <ul>
+
+                                        <a href="#">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="far fa-heart"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fas fa-sync-alt"></i>
+                                        </a>
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="product">
+                                <div class="product__header">
+                                    <img src="./images/products/photoframe/wall.jpg" alt="" />
+                                </div>
+                                <div class="product__footer">
+                                    <h3>Circle Wall Photo Frame</h3>
+                                    <div class="rating">
+                                        <a href="#">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </a>
+                                    </div>
+                                    <div class="product__price">
+                                        <h4>Rs. 1,299.00</h4>
+                                        <a href="#"><button type="button" class="product__btn">
+                                                Add to Cart
+                                            </button></a>
+                                    </div>
+                                    <ul>
+
+                                        <a href="#">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="far fa-heart"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fas fa-sync-alt"></i>
+                                        </a>
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="product">
+                                <div class="product__header">
+                                    <img src="./images/products/wallmount/storage.jpg" alt="" />
+                                </div>
+                                <div class="product__footer">
+                                    <h3>Metal Wire Basket Storage</h3>
+                                    <div class="rating">
+                                        <a href="#">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </a>
+                                    </div>
+                                    <div class="product__price">
+                                        <h4>Rs. 1,400.00</h4>
+                                        <a href="#"><button type="button" class="product__btn">
+                                                Add to Cart
+                                            </button></a>
+                                    </div>
+                                    <ul>
+
+                                        <a href="#">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="far fa-heart"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fas fa-sync-alt"></i>
+                                        </a>
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="product">
+                                <div class="product__header">
+                                    <img src="./images/products/popup/explosion-box.jpg" alt="" />
+                                </div>
+                                <div class="product__footer">
+                                    <h3>Proposal Pop-up Box</h3>
+                                    <div class="rating">
+                                        <a href="#">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </a>
+                                    </div>
+                                    <div class="product__price">
+                                        <h4>Rs. 799.00</h4>
+                                        <a href="#"><button type="button" class="product__btn">
+                                                Add to Cart
+                                            </button></a>
+                                    </div>
+                                    <ul>
+
+                                        <a href="#">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="far fa-heart"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fas fa-sync-alt"></i>
+                                        </a>
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="product">
+                                <div class="product__header">
+                                    <img src="./images/products/photoframe/homeframe-set.jpg" alt="" />
+                                </div>
+                                <div class="product__footer">
+                                    <h3>Home Frame Set</h3>
+                                    <div class="rating">
+                                        <a href="#">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </a>
+                                    </div>
+                                    <div class="product__price">
+                                        <h4>Rs. 2,299.00</h4>
+                                        <a href="#"><button type="button" class="product__btn">
+                                                Add to Cart
+                                            </button></a>
+                                    </div>
+                                    <ul>
+
+                                        <a href="#">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="far fa-heart"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fas fa-sync-alt"></i>
+                                        </a>
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="product">
+                                <div class="product__header">
+                                    <img src="./images/products/letters/date-set.jpg" alt="" />
+                                </div>
+                                <div class="product__footer">
+                                    <h3>Frame the Date</h3>
+                                    <div class="rating">
+                                        <a href="#">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </a>
+                                    </div>
+                                    <div class="product__price">
+                                        <h4>Rs. 1,35.00</h4>
+                                        <a href="#"><button type="button" class="product__btn">
+                                                Add to Cart
+                                            </button></a>
+                                    </div>
+                                    <ul>
+
+                                        <a href="#">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="far fa-heart"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fas fa-sync-alt"></i>
+                                        </a>
+
+                                    </ul>
+                                </div>
+                            </div>
+            </section>
+        </div>
+
+        <section class="facility__section section" id="facility">
+            <div class="container">
+                <div class="facility__container">
+                    <div class="facility__box">
+                        <div class="facility-img__container">
+                            <i class="fas fa-plane"></i>
+                        </div>
+                        <p>FREE SHIPPING WORLDWIDE</p>
+                    </div>
+
+                    <div class="facility__box">
+                        <div class="facility-img__container">
+                            <i class="fas fa-credit-card"></i>
+                        </div>
+                        <p>CASHBACK GURANTEED</p>
+                    </div>
+
+                    <div class="facility__box">
+                        <div class="facility-img__container">
+                            <i class="far fa-credit-card"></i>
+                        </div>
+                        <p>SEVERAL PAYMENT GATEWAYS</p>
+                    </div>
+
+                    <div class="facility__box">
+                        <div class="facility-img__container">
+                            <i class="fas fa-headphones"></i>
+                        </div>
+                        <p>24/7 ONLINE SUPPORT</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Testimonial-->
+        <section class="section testimonial" id="testimonial">
+            <div class="testimonial__container">
+                <div class="glide" id="glide_3">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides">
+                            <li class="glide__slide">
+                                <div class="testimonial__box">
+                                    <div class="client__image">
+                                        <img src="./images/profile1.jpg" alt="">
+                                    </div>
+                                    <p>All in all, the speed of transaction, secure payment facility, good
+                                        quality products, guranteed cashback, and the good customer service made me feel
+                                        comfortable with shopping online in HandCraft. A+</p>
+                                    <div class="client__info">
+                                        <h3>Chester Alan</h3>
+                                    </div>
+                                </div>
+
+                            </li>
+
+                            <li class="glide__slide">
+                                <div class="testimonial__box">
+                                    <div class="client__image">
+                                        <img src="./images/profile2.jpg" alt="">
+                                    </div>
+                                    <p>HandCraft offers pretty good deals plus all orders are delivered straight to your
+                                        home without any hassle!</p>
+                                    <div class="client__info">
+                                        <h3>Caryl Nonato</h3>
+                                    </div>
+                                </div>
+
+                            </li>
+
+                            <li class="glide__slide">
+                                <div class="testimonial__box">
+                                    <div class="client__image">
+                                        <img src="./images/profile3.jpg" alt="">
+                                    </div>
+                                    <p>You can pretty much find what you need at a much affordable price on HandCraft
+                                    </p>
+                                    <div class="client__info">
+                                        <h3>Marco Davis</h3>
+                                    </div>
+                                </div>
+
+                            </li>
+
+                            <li class="glide__slide">
+                                <div class="testimonial__box">
+                                    <div class="client__image">
+                                        <img src="./images/profile4.jpg" alt="">
+                                    </div>
+                                    <p>As someone who enjoys crafting, I love how HandCraft carries "everything"
+                                        including explosion boxes, letter writing materials and other things that are
+                                        hardle available locally</p>
+                                    <div class="client__info">
+                                        <h3>Aryanna Epperson</h3>
+                                    </div>
+                                </div>
+
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="glide__bullets" data-glide-el="controls[nav]">
+                        <button class="glide__bullet" data-glide-dir="=0"></button>
+                        <button class="glide__bullet" data-glide-dir="=1"></button>
+                        <button class="glide__bullet" data-glide-dir="=2"></button>
+                        <button class="glide__bullet" data-glide-dir="=3"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Newsletter-->
+        <section class="section newsletter" id="contact">
+            <div class="container">
+                <div class="newsletter__content">
+                    <div class="newsletter__data">
+                        <h3>SUBSCRIBE TO OUR NEWSLETTER</h3>
+                        <p>Whoever said that money can't buy happiness simply didn't know where to go shopping.</p>
+                    </div>
+                    <form action="#">
+                        <input type="email" class="newsletter__email"
+                            pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+                            placeholder="Enter your email address" />
+                        <a href="#" class="newsletter__link">Subscribe</a>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-top__box">
+                    <h3>EXTRAS</h3>
+                    <a href="#">Brands</a>
+                    <a href="#">Gift Certificates</a>
+                    <a href="#">Affiliate</a>
+                    <a href="#">Specials</a>
+                    <a href="#">Site Map</a>
+                </div>
+
+                <div class="footer-top__box">
+                    <h3>INFORMATION</h3>
+                    <a href="#">About Us</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Site Map</a>
+                </div>
+
+                <div class="footer-top__box">
+                    <h3>MY ACCOUNT</h3>
+                    <a href="#">My Account</a>
+                    <a href="#">Order History</a>
+                    <a href="#">Wish List</a>
+                    <a href="#">Newsletter</a>
+                    <a href="#">Returns</a>
+                </div>
+                <div class="footer-top__box">
+                    <h3>CONTACT US</h3>
+                    <div class="">
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i>
+                            A-167, Dream House, RIICO Industrial Area, Abu Road
+                        </span>
+                    </div>
+
+                    <div class="">
+                        <span>
+                            <i class="fas fa-envelope"></i>
+                            zenya6928@gmail.com
+                        </span>
+                    </div>
+
+                    <div class="">
+                        <span>
+                            <i class="fas fa-phone-alt"></i>
+                            7357-789-084
+                        </span>
+                    </div>
+
+                    <div class="">
+                        <span>
+                            <i class="fas fa-paper-plane"></i>
+                            Abu Road, Rajasthan
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--Go To Top-->
+    <a href="#" class="goto-top scroll-link">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!--Glidejs-->
+    <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+
+    <!--AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!--Script-->
+    <script src="./js/index.js"></script>
+    <script src="./js/products.js"></script>
+    <script src="./js/slider.js"></script>
+
+</body>
+
+</html>
